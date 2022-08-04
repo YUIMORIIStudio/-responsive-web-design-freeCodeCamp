@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Libre Baskerville", "Lato", serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #37383a;
+    line-height: 3rem;
+    color: #666;
+    /* height: 3000px; */
+}
+
+.pimg1 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg2 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 4rem;
+}
+
+.pimg3 {
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 4rem;
+}
+
+@media(min-width:400px) {
+    .header {
+        background-attachment: scroll;
+    }
+}
+
+.pimg1 {
+    background-image: url(images/1.png);
+    min-height: 600px;
+    max-width: 100%;
+}
+
+.pimg2 {
+    background-image: url(images/download.jpg);
+    min-height: 300px;
+    max-width: 100%;
+}
+
+.pimg3 {
+    background-image: url(images/1.png);
+    min-height: 100px;
+    max-width: 100%;
+}
+
+.ptext,
+.ptext2 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.ptext3 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+}
+
+#description {
+    font-family: "Libre Baskerville", "Lato", serif;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    /* padding-left: 0.5rem; */
+    line-height: 2rem;
+    font-size: 0.9rem;
+    font-family: "Libre Baskerville", "Lato", serif;
+}
+
+@media (min-width: 530px) {
+    .main {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 976px) {
+    .main {
+        max-width: 900px;
+    }
+}
+
+
+/* form */
+
+#survey-form {
+    padding-top: 2rem;
+    border-radius: 0.5rem;
+}
+
+.form-team {
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+.form-detail {
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+    padding-left: 1rem;
+    color: #838383;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 0.25rem;
+    transition: border-color 0.1s ease-in, box-shadow 0.15s ease-in;
+}
+
+.form-detail:focus {
+    border-color: #034738;
+    outline: 0;
+    background-color: #fff;
+    box-shadow: 0 0 0.15rem 0.15rem rgba(0, 48, 24, 0.11);
+}
+
+
+/* .input{
+    color: #c0c0c0;
+  } */
+
+.title {
+    /* padding-top: 1rem; */
+    font-size: 0.9rem;
+    font-family: "Libre Baskerville", "Lato", serif;
+    color: #666;
+}
+
+h2 {
+    /* padding-top: 1rem; */
+    font-size: 1.5rem;
+    font-family: "Libre Baskerville", "Lato", serif;
+    color: black;
+}
+
+.title1 {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-family: "Libre Baskerville", "Lato", serif;
+    color: #666;
+    padding-top: 1rem;
+}
+
+.checkbox,
+.radio {
+    line-height: 1.7rem;
+}
+
+.input-round,
+.checkbox-input {
+    display: inline-block;
+    margin-right: 1rem;
+    line-height: 1rem;
+}
+
+.form-team-check {
+    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 0.8rem;
+    line-height: inherit;
+}
+
+.input-textarea {
+    min-height: 200px;
+    width: 100%;
+    padding: 1rem;
+}
+
+button {
+    border: none;
+}
+
+.submit-button {
+    display: inline-block;
+    width: 8rem;
+    color: #fff;
+    background-color: #034738;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

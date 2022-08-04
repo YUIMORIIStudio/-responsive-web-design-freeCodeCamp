@@ -1,0 +1,264 @@
+                                            * {
+                                                margin: 0;
+                                                padding: 0;
+                                            }
+                                            
+                                            @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;400&display=swap');
+                                            @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+                                            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Noto+Serif+JP:wght@200;400&display=swap');
+                                            html {
+                                                box-sizing: border-box;
+                                                font-size: 10px;
+                                            }
+                                            
+                                            body {
+                                                font-size: 1.5rem;
+                                                line-height: 1;
+                                                font-family: 'Noto Serif JP', serif;
+                                                color: #011640;
+                                                overflow-x: hidden;
+                                                background-color: #fff9e7;
+                                                ;
+                                            }
+                                            
+                                            h1 {
+                                                font-size: 5rem;
+                                                margin: 8rem 0 2rem 0rem;
+                                                color: #c79f31;
+                                                font-family: 'Nanum Myeongjo', serif;
+                                            }
+                                            
+                                            li {
+                                                list-style: none;
+                                            }
+                                            
+                                            a {
+                                                color: #3f2f16;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            img {
+                                                max-width: 100%;
+                                                height: auto;
+                                                display: block;
+                                            }
+                                            /* navigation */
+                                            
+                                            .nav {
+                                                display: flex;
+                                                justify-content: flex-end;
+                                                align-items: center;
+                                                top: 0;
+                                                width: 100%;
+                                                min-height: 50px;
+                                                background-color: #fff;
+                                                z-index: 10;
+                                                font-family: 'Nanum Myeongjo', serif;
+                                                position: fixed;
+                                            }
+                                            
+                                            nav>ul {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: space-around;
+                                                margin-right: 12rem;
+                                            }
+                                            
+                                            nav li {
+                                                padding: 0px 1rem;
+                                                margin-right: 4rem;
+                                            }
+                                            
+                                            nav .category {
+                                                color: #5a3e12;
+                                                transition: color 0.3s ease-out;
+                                            }
+                                            
+                                            nav a:hover .category {
+                                                color: #fcc651;
+                                            }
+                                            /* about section */
+                                            
+                                            #welcome-section {
+                                                /* margin: 5rem; */
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: space-around;
+                                                align-items: center;
+                                                height: 100vh;
+                                            }
+                                            
+                                            .title {
+                                                margin-left: 8rem;
+                                            }
+                                            
+                                            .landingpage-img {
+                                                margin-right: 3rem;
+                                                width: 500px;
+                                                height: auto;
+                                            }
+                                            
+                                            #subtitle {
+                                                font-size: 2rem;
+                                                margin: 2rem 0;
+                                                color: #6b532d;
+                                            }
+                                            
+                                            #story {
+                                                margin: 4rem;
+                                                width: 80%;
+                                                padding: 0 6rem;
+                                                color: #6b532d;
+                                                font-size: 1.6rem;
+                                                line-height: 2rem;
+                                            }
+                                            
+                                            #story a {
+                                                color: #c79f31;
+                                            }
+                                            
+                                            span {
+                                                font-size: 2rem;
+                                                margin: 2rem 0;
+                                                color: #6b532d;
+                                            }
+                                            
+                                            #subtitle span {
+                                                color: #c79f31;
+                                            }
+                                            
+                                            #about {
+                                                padding: 5rem 5rem 5rem 5rem;
+                                            }
+                                            
+                                            #illustration {
+                                                padding: 3rem;
+                                                margin-left: 4rem;
+                                                width: 400px;
+                                            }
+                                            
+                                            #container {
+                                                display: flex;
+                                                flex-direction: row;
+                                                justify-content: space-around;
+                                                align-items: center;
+                                            }
+                                            
+                                            #projects {
+                                                padding: 5rem 5rem;
+                                                text-align: center;
+                                            }
+                                            
+                                            #about h4 {
+                                                text-align: center;
+                                                font-size: 3.5rem;
+                                                color: #6b532d;
+                                            }
+                                            /* about section end */
+                                            /* projects :start */
+                                            
+                                            #projects h4 {
+                                                text-align: center;
+                                                font-size: 3.5rem;
+                                                color: #6b532d;
+                                                font-family: 'Nanum Myeongjo', serif;
+                                                margin-bottom: 5rem;
+                                                color: #6b532d;
+                                            }
+                                            
+                                            #projects {
+                                                padding: 5rem 1rem;
+                                                text-align: center;
+                                            }
+                                            
+                                            #projects {
+                                                padding: 10rem 5rem;
+                                                text-align: center;
+                                            }
+                                            
+                                            #projects>p {
+                                                margin-bottom: 5rem;
+                                            }
+                                            
+                                            .projects-grid {
+                                                display: grid;
+                                                grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));
+                                                grid-gap: 5rem;
+                                                margin: 1.5rem auto;
+                                            }
+                                            
+                                            @media (max-width: 400px) {
+                                                .projects-grid {
+                                                    grid-template-columns: 1fr;
+                                                    margin: 0 auto;
+                                                }
+                                            }
+                                            
+                                            .card {
+                                                position: relative;
+                                                padding-bottom: 2rem;
+                                                border: 1px solid rgba(217, 217, 217, 0.5);
+                                                border-radius: 5px;
+                                            }
+                                            
+                                            .card:hover {
+                                                box-shadow: 0 0 2rem -0.7rem #bdac75;
+                                                border: 1px solid #ffefd2;
+                                            }
+                                            
+                                            .desc {
+                                                padding: 2rem;
+                                                text-align: center;
+                                            }
+                                            
+                                            p {
+                                                color: #6b532d;
+                                                font-size: 1.2rem;
+                                            }
+                                            
+                                            .project-tile {
+                                                margin: 2rem 0 2rem 0;
+                                            }
+                                            
+                                            .project-tile>a {
+                                                color: #6b532d;
+                                                font-weight: 200;
+                                            }
+                                            
+                                            #contact {
+                                                margin-top: 3rem;
+                                                padding: 10rem 5rem;
+                                                text-align: center;
+                                                background-color: #693f00;
+                                                color: #fff;
+                                            }
+                                            
+                                            #contact h4 {
+                                                text-align: center;
+                                                font-size: 3.5rem;
+                                                color: #fff3e1;
+                                                font-family: 'Nanum Myeongjo', serif;
+                                            }
+                                            
+                                            .contact-logo {
+                                                width: 2rem;
+                                                padding: 1rem;
+                                                stroke: white;
+                                            }
+                                            
+                                            .contact-links {
+                                                display: flex;
+                                                justify-content: center;
+                                                width: 100%;
+                                                margin-top: 1rem;
+                                                flex-wrap: wrap;
+                                            }
+                                            
+                                            .contact-details {
+                                                display: flex;
+                                                flex-direction: row;
+                                                align-items: center;
+                                                justify-content: center;
+                                                color: #fff;
+                                                padding: 1rem;
+                                            }

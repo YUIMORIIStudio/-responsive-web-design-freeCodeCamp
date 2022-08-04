@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Survey form for FreeCodeCamp Responsive Web Design Certification.">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre%20Baskerville" rel="stylesheet" type="text/css">
+    <title>Yui`s Survey Form</title>
+</head>
+<body>
+<div class="pimg1">
+    <div class="ptext">
+        <h1 id="title">Motivation Survey</h1>
+        <p id="description">Your motivation levels matter.</br>
+            Please answer honestly and help us make you happier!</p>
+    </div>
+</div>
+
+<div class="main">
+
+    <form id="survey-form">
+        <div class="form-team">
+            <label id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="form-detail" placeholder="Please Enter your Name"
+                required />
+        </div>
+
+
+        <div class="form-team">
+            <label id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="form-detail" placeholder="Please Enter your Email"
+                required />
+        </div>
+
+        <div class="form-team">
+            <label id="number-label">Age</label>
+            <input type="number" name="age" id="number" min="18" max="99" class="form-detail" placeholder="Age">
+        </div>
+
+
+
+        <div class="form-team">
+            <label class="title">Position</label>
+            <select id="dropdown" name="role" class="form-detail" required>
+                <option class="form-detail">Select your job position </option>
+                <option value="UI Designer">UI Designer</option>
+                <option value="Product-manager">Product manager</option>
+                <option value="UX-Designer">UX Designer</option>
+                <option value="UX-Researcher">UX Researcher</option>
+                <option value="Front-end">Front-end Developer</option>
+                <option value="Full-stack">Full-stack Developer</option>
+                <option value="Manager">Manager</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-team-check">
+            <p class="title1">How do you feel when you arrive at your job on a typical day? </p>
+            <label class="radio">
+                <input name="user-feel" value="Excited" type="radio" class="input-round" checked />Excited</label>
+            </label>
+            <label class="radio">
+                <input name="user-feel" value="Pretty good" type="radio" class="input-round" checked />Pretty
+                good</label>
+            </label>
+            <label class="radio">
+                <input name="user-feel" value="Normal" type="radio" class="input-round" checked />Normal</label>
+            </label>
+            <label class="radio">
+                <input name="user-feel" value="Slightly stressed
+                " type="radio" class="input-round" checked />Slightly stressed
+            </label>
+
+
+            <label class="radio">
+                <input name="user-feel" value="Full of dread!" type="radio" class="input-round" checked />Full of
+                dread!</label>
+            </label>
+
+        </div>
+        <div class="form-team-check">
+            <p class="title1">Now, choose the word(s) which describe how you feel about your work in general. </p>
+            <label class="radio">
+                <input name="user-feel" value="Rewarding" type="radio" class="input-round" checked />Rewarding</label>
+            </label>
+            <label class="radio">
+                <input name="user-feel" value="Challenging" type="radio" class="input-round"
+                    checked />Challenging</label>
+            </label>
+            <label class="radio">
+                <input name="user-feel" value="Stimulating" type="radio" class="input-round"
+                    checked />Stimulating</label>
+            </label>
+            <label class="radio">
+                <input name="user-feel" value="Boring
+                " type="radio" class="input-round" checked />Boring
+            </label>
+
+
+            <label class="radio">
+                <input name="user-feel" value="Repetitive" type="radio" class="input-round" checked />Repetitive</label>
+            </label>
+            <label class="radio">
+                <input name="user-feel" value="Pointless" type="radio" class="input-round" checked />Pointless</label>
+            </label>
+
+        </div>
+    </form>
+</div>
+<div class="pimg2">
+    <div class="ptext2">
+        <p id="description">
+            That’s great! Your feedback can really help us to do things better.
+        </p>
+        <h2 id="title2">Now we’re going to ask you to think about what you want most from a job.</h2>
+    </div>
+</div>
+<div class="main">
+    <form id="survey-form">
+        <div class="form-team-check">
+            <p class="title1">
+                When it comes to work, choose the 3 factors which are most important to you:
+            </p>
+            <label class="checkbox">
+                <input name="important" value="Being well paid" type="checkbox" class="checkbox-input" />Being well
+                paid</label>
+         
+            <label class="checkbox">
+                <input name="important" value="Having job security" type="checkbox" class="checkbox-input" />Having job security</label>
+            <label class="checkbox">
+                <input name="important" value="Having opportunities to progress" type="checkbox" class="checkbox-input" />Having opportunities to progress</label>
+            <label class="checkbox">
+                <input name="important" value="Learning new skills" type="checkbox" class="checkbox-input" />Learning new skills</label>
+            <label class="checkbox">
+                <input name="important" value="Being part of a team" type="checkbox" class="checkbox-input" />Being part of a team</label>
+        </div>
+
+  
+    <div class="form-team">
+        <p class="title1">How much do your superiors notice when you really make a good job of something? </p>
+        <textarea
+          id="comments"
+          class="input-textarea "
+          name="answer"
+          placeholder="Type your answer here..."></textarea>
+      </div>
+      <div class="form-team">
+        <p class="title1">To what extent do you feel like your superiors try to help you to achieve your goals?  </p>
+        <textarea
+          id="comments"
+          class="input-textarea "
+          name="answer"
+          placeholder="Type your answer here..."></textarea>
+      </div>
+      <div class="form-team">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+</div>
+
+<footer>
+<div class="pimg3">
+    <div class="ptext3">
+        <p id="description">Design & development by Yui Morii YI</p>
+    </div>
+</div>
+</footer>
+
+</body>
+
+</html>
