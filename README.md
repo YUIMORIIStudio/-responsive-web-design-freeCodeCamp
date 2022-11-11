@@ -42,7 +42,7 @@ These projects are designed for the freeCodeCamp Responsive Web Design certifica
 
 [🪴Result](https://codepen.io/yuimorii/pen/ExZdrOL)
 
-### **Project 4:  Product Landing Page** 
+## **Project 4:  Product Landing Page** 
 
-### **Project 5: Personal Portfolio:**
+## **Project 5: Personal Portfolio:**
 
