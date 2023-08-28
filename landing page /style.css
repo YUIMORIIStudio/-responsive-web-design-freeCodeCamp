@@ -1,447 +1,444 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=EB+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #E4E4E6;
-    z-index: -10;
+  background-color: #e4e4e6;
+  z-index: -10;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: #222222;
-    letter-spacing: 0.5rem;
-    text-decoration: none;
+  color: #222222;
+  letter-spacing: 0.5rem;
+  text-decoration: none;
 }
-
 
 /* nav start */
 
 @media (max-width: 650px) {
-    header {
-        flex-wrap: wrap;
-    }
+  header {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 650px) {
-    .logo {
-        margin: 15px auto;
-    }
+  .logo {
+    margin: 15px auto;
+  }
 }
 
 @media (max-width: 650px) {
-    nav {
-        margin: 15px auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    nav li {
-        padding-bottom: 8px;
-    }
-}
-
-header {
-    padding: 0 5rem;
+  nav {
+    margin: 15px auto;
     width: 100%;
-    position: fixed;
-    top: 0;
-    min-height: 70px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    background-color: #E4E4E6;
-    z-index: 1000;
+    text-align: center;
+  }
+  nav li {
+    padding-bottom: 8px;
+  }
+}
+header {
+  padding: 0 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(232, 232, 232, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 .logo {
-    width: 100%;
-    max-width: 30px;
-    /* padding-top: 1rem; */
+  width: 100%;
+  max-width: 30px;
+  /* padding-top: 1rem; */
 }
 
 header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2rem;
 }
 
 header nav li {
-    padding: 0 3rem;
+  padding: 0 3rem;
 }
 
 .icon {
-    width: 100%;
-    max-width: 20px;
+  width: 100%;
+  max-width: 20px;
 }
 
 #topsection {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #topsection img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
 }
 
 #maintext {
-    font-size: 6rem;
-    font-family: 'EB Garamond', serif;
-    letter-spacing: 1rem;
-    color: black;
-    font-weight: 200;
+  font-size: 6rem;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 1rem;
+  color: black;
+  font-weight: 200;
 }
 
 #text {
-    z-index: 100;
-    position: absolute;
-    left: 8%;
-    top: 40%;
-    width: 100%;
-    text-align: left;
-    color: black;
+  z-index: 100;
+  position: absolute;
+  left: 8%;
+  top: 40%;
+  width: 100%;
+  text-align: left;
+  color: black;
 }
 
 #ptext {
-    font-size: 1.3rem;
-    font-family: 'Noto Serif JP', serif;
-    letter-spacing: 0.5rem;
+  font-size: 1.3rem;
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 0.5rem;
 }
 
 #btn {
-    color: rgb(0, 0, 0);
-    background-color: #ABACEA;
-    font-size: 1.1rem;
-    padding: 0.8rem 5rem;
-    height: 4.5rem;
-    border: 0;
-    border-radius: 125px;
-    cursor: pointer;
-    outline: none;
-    font-family: 'Noto Serif JP', serif;
-    z-index: 100;
-    position: absolute;
-    left: 8%;
-    top: 70%;
+  color: rgb(0, 0, 0);
+  background-color: #abacea;
+  font-size: 1.1rem;
+  padding: 0.8rem 5rem;
+  height: 4.5rem;
+  border: 0;
+  border-radius: 125px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Noto Serif JP", serif;
+  z-index: 100;
+  position: absolute;
+  left: 8%;
+  top: 70%;
 }
 
 #right {
-    z-index: 101;
+  z-index: 101;
 }
-
 
 /* section 2 */
 
 .pimg1 {
-    width: 100%;
-    height: 400px;
-    background: url(img/purple2.png);
-    position: relative;
+  width: 100%;
+  height: 400px;
+  background: url(img/purple2.png);
+  position: relative;
 }
 
 .pimg1,
 .pimg2 {
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.ptext2>h1 {
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 100;
-    color: white;
-    letter-spacing: 0.5rem;
-    line-height: 3rem;
+.ptext2 > h1 {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.5rem;
+  line-height: 3rem;
 }
 
-.ptext2>p {
-    position: absolute;
-    top: 52%;
-    width: 100%;
-    text-align: center;
-    font-size: 1.1rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 100;
-    color: white;
-    letter-spacing: 0.5rem;
-    line-height: 3rem;
+.ptext2 > p {
+  position: absolute;
+  top: 52%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.5rem;
+  line-height: 3rem;
 }
 
 .pimg2 {
-    width: 100%;
-    height: 60vh;
-    background: url(img/2.png) no-repeat;
-    background-size: 100%;
-    -moz-background-size: 100%;
-    z-index: 100;
+  width: 100%;
+  height: 60vh;
+  background: url(img/2.png) no-repeat;
+  background-size: 100%;
+  -moz-background-size: 100%;
+  z-index: 100;
 }
 
 .pimg3 {
-    width: 100%;
-    height: 85vh;
-    background: url(img/3.png) no-repeat;
-    background-size: 100%;
-    -moz-background-size: 100%;
+  width: 100%;
+  height: 85vh;
+  background: url(img/3.png) no-repeat;
+  background-size: 100%;
+  -moz-background-size: 100%;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-    width: calc(100% / 3);
-    margin: 2rem;
-    padding: 2rem 3rem 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 2rem;
+  padding: 2rem 3rem 4rem 3rem;
 }
 
 #why {
-    padding: 0rem 5rem 0rem 5rem;
-    text-align: center;
-    z-index: -10;
+  padding: 0rem 5rem 0rem 5rem;
+  text-align: center;
+  z-index: -10;
 }
 
-.desc>h3 {
-    margin: 2rem 0 2rem 0;
-    font-size: 1.3rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 100;
-    text-align: center;
+.desc > h3 {
+  margin: 2rem 0 2rem 0;
+  font-size: 1.3rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 100;
+  text-align: center;
 }
 
-.desc>p {
-    margin: 2rem 0 rem 0;
-    font-size: 1rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 100;
-    text-align: center;
+.desc > p {
+  margin: 2rem 0 rem 0;
+  font-size: 1rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 100;
+  text-align: center;
 }
 
 .card:hover {
-    box-shadow: 0 0 2rem -0.7rem rgba(55, 56, 58, 0.2);
-    border: 1px solid #ced4ee;
-    transition: color 1s;
+  box-shadow: 0 0 2rem -0.7rem rgba(55, 56, 58, 0.2);
+  border: 1px solid #ced4ee;
+  transition: color 1s;
 }
 
 .btn:hover,
 #btn:hover {
-    background-color: #fff;
-    transition: background-color 3s;
-    color: #2f1e84;
-    transition: color 10s;
-    box-shadow: 0 0 2rem -0.7rem rgba(55, 56, 58, 0.2);
-    border: 1px solid #ced4ee;
-    transition: color 10s;
+  background-color: #fff;
+  transition: background-color 3s;
+  color: #2f1e84;
+  transition: color 10s;
+  box-shadow: 0 0 2rem -0.7rem rgba(55, 56, 58, 0.2);
+  border: 1px solid #ced4ee;
+  transition: color 10s;
 }
 
 #intro {
-    /*background-color: #4a4fbd;*/
-    color: black;
-    margin: 10rem 0;
+  /*background-color: #4a4fbd;*/
+  color: black;
+  margin: 10rem 0;
 }
 
-.column-left>h1 {
-    margin: 20rem 0 1rem 0;
-    font-size: 1.8rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 400;
+.column-left > h1 {
+  margin: 20rem 0 1rem 0;
+  font-size: 1.8rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
 }
 
-.column-left>p {
-    margin: 0rem 0 3rem 0;
-    font-size: 1rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 100;
+.column-left > p {
+  margin: 0rem 0 3rem 0;
+  font-size: 1rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 100;
 }
 
 .column-left {
-    float: left;
-    width: 40%;
-    padding: 0 0 0 10%;
+  float: left;
+  width: 40%;
+  padding: 0 0 0 10%;
 }
 
 .column-right {
-    float: right;
-    width: 50%;
-    margin-top: 2rem;
+  float: right;
+  width: 50%;
+  margin-top: 2rem;
 }
 
 .grid::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .btn {
-    color: rgb(0, 0, 0);
-    background-color: #ABACEA;
-    font-size: 1.1rem;
-    padding: 0.8rem 5rem;
-    height: 4.5rem;
-    border: 0;
-    border-radius: 125px;
-    cursor: pointer;
-    outline: none;
-    font-family: 'Noto Serif JP', serif;
-    z-index: 100;
+  color: rgb(0, 0, 0);
+  background-color: #abacea;
+  font-size: 1.1rem;
+  padding: 0.8rem 5rem;
+  height: 4.5rem;
+  border: 0;
+  border-radius: 125px;
+  cursor: pointer;
+  outline: none;
+  font-family: "Noto Serif JP", serif;
+  z-index: 100;
 }
 
 #hero {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .column-right2 {
-    float: right;
-    width: 35%;
-    padding: 10% 5% 0 10%;
+  float: right;
+  width: 35%;
+  padding: 10% 5% 0 10%;
 }
 
 .column-left2 {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
 .column-left4 {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 
-.column-right2>h1,
-.column-left3>h1 {
-    margin: 5rem 0 1rem 0;
-    font-size: 1.8rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 400;
-    line-height: 1.5em;
+.column-right2 > h1,
+.column-left3 > h1 {
+  margin: 5rem 0 1rem 0;
+  font-size: 1.8rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
-.column-right2>p,
-.column-left3>p {
-    margin: 0rem 0 3rem 0;
-    font-size: 1rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 100;
-    line-height: 1.5em;
+.column-right2 > p,
+.column-left3 > p {
+  margin: 0rem 0 3rem 0;
+  font-size: 1rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 100;
+  line-height: 1.5em;
 }
 
 .column-left3 {
-    float: left;
-    width: 30%;
-    padding: 0 0 0 10%;
+  float: left;
+  width: 30%;
+  padding: 0 0 0 10%;
 }
 
 .column-right3 {
-    float: right;
-    width: 50%;
+  float: right;
+  width: 50%;
 }
 
 .column-right4 {
-    float: right;
-    width: 50%;
-    margin-top: 2rem;
+  float: right;
+  width: 50%;
+  margin-top: 2rem;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .container h5 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .container p {
-    font-size: 1rem;
-    font-family: 'Noto Serif JP', serif;
-    color: #818181;
+  font-size: 1rem;
+  font-family: "Noto Serif JP", serif;
+  color: #818181;
 }
 
 .product-title {
-    margin: 2rem 0 2rem 0;
-    font-family: 'Noto Serif JP', serif;
+  margin: 2rem 0 2rem 0;
+  font-family: "Noto Serif JP", serif;
 }
 
 .grid4 {
-    margin: 2rem 2rem 7rem 5rem;
+  margin: 2rem 2rem 7rem 5rem;
 }
 
 .card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    width: calc(100% / 1.5);
-    height: 450px;
-    padding: 3rem 4rem 3rem 4rem;
-    margin: 2rem 0rem 0rem 0rem;
-    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  width: calc(100% / 1.5);
+  height: 450px;
+  padding: 3rem 4rem 3rem 4rem;
+  margin: 2rem 0rem 0rem 0rem;
+  background-color: #fff;
 }
 
 .select-button {
-    display: flex;
-    flex-direction: row;
-    /* border: 1px solid rgba(55, 56, 58, 0.1);
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid rgba(55, 56, 58, 0.1);
     border-radius: 5px; */
 }
 
 .btn2 {
-    width: 50%;
-    color: rgb(0, 0, 0);
-    font-size: 1.1rem;
-    padding: 0.8rem 5rem;
-    cursor: pointer;
-    outline: none;
-    font-family: 'Noto Serif JP', serif;
+  width: 50%;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  padding: 0.8rem 5rem;
+  cursor: pointer;
+  outline: none;
+  font-family: "Noto Serif JP", serif;
 }
 
 .desc2 {
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 
 #info h2 {
-    margin: 5rem 0 1rem 0;
-    font-size: 1.8rem;
-    font-family: 'Noto Serif JP', serif;
-    font-weight: 400;
-    line-height: 1.5em;
+  margin: 5rem 0 1rem 0;
+  font-size: 1.8rem;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 400;
+  line-height: 1.5em;
 }
-
 
 /* 
 /* .product-img {
@@ -462,121 +459,120 @@ header nav li {
 } */
 
 .image-div img {
-    transition: all 1s;
+  transition: all 1s;
 }
 
 .image-div img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 
 /* info section */
 
 #info {
-    /* margin: 7rem 0; */
-    padding: 10rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
+  /* margin: 7rem 0; */
+  padding: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
 }
 
-#info>div {
-    width: 60%;
-    padding-right: 5rem;
-    align-self: flex-start;
+#info > div {
+  width: 60%;
+  padding-right: 5rem;
+  align-self: flex-start;
 }
 
 @media (max-width: 1000px) {
-    #info {
-        flex-direction: column;
-        align-items: center;
-    }
-    #info>div {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 3rem;
-    }
-    #info h2 {
-        text-align: center;
-    }
+  #info {
+    flex-direction: column;
+    align-items: center;
+  }
+  #info > div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  #info h2 {
+    text-align: center;
+  }
 }
 
 .grid4::after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .column-left6 {
-    float: left;
-    width: 40%;
-    padding: 0 0 0 5%;
+  float: left;
+  width: 40%;
+  padding: 0 0 0 5%;
 }
 
 #contact {
-    padding: 2rem;
-    text-align: center;
-    background: url(img/1.jpg) no-repeat;
-    background-size: cover;
+  padding: 2rem;
+  text-align: center;
+  background: url(img/1.jpg) no-repeat;
+  background-size: cover;
 }
 
 form {
-    margin: 1rem;
-    text-align: left;
+  margin: 1rem;
+  text-align: left;
 }
 
 label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .form-group {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-.form-group>p {
-    margin-bottom: 0.5rem;
+.form-group > p {
+  margin-bottom: 0.5rem;
 }
 
 .form-bg {
-    display: block;
-    width: 100%;
-    height: 1.5rem;
-    padding: 1rem;
-    color: #292d31;
-    border: 1px solid rgba(55, 56, 58, 0.1);
-    border-radius: 5px;
-    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  padding: 1rem;
+  color: #292d31;
+  border: 1px solid rgba(55, 56, 58, 0.1);
+  border-radius: 5px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .form-bg:focus {
-    border-color: #ced4ee;
-    outline: 0;
-    box-shadow: 0 0 1rem 0.2rem rgba(206, 212, 238, 0.25);
+  border-color: #ced4ee;
+  outline: 0;
+  box-shadow: 0 0 1rem 0.2rem rgba(206, 212, 238, 0.25);
 }
 
 .input-textarea {
-    min-height: 120px;
-    width: 100%;
-    padding: 1rem;
-    resize: vertical;
-    border: 1px solid rgba(55, 56, 58, 0.1);
-    border-radius: 5px;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  min-height: 120px;
+  width: 100%;
+  padding: 1rem;
+  resize: vertical;
+  border: 1px solid rgba(55, 56, 58, 0.1);
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .input-textarea:focus {
-    border-color: #ced4ee;
-    outline: 0;
-    box-shadow: 0 0 1rem 0.2rem rgba(206, 212, 238, 0.25);
+  border-color: #ced4ee;
+  outline: 0;
+  box-shadow: 0 0 1rem 0.2rem rgba(206, 212, 238, 0.25);
 }
 
 .form-bg,
 .input-textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
